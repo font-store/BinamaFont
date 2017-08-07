@@ -222,30 +222,38 @@ Layout setup
 
   footer {
     background: #343740;
-    padding: 100px;
+    padding: 40px;
   }
   /******************************
 Welcome Section
 *******************************/
 
   #welcome {
-    padding-top: 14vh;
-    text-align: center;
+    
+
     display: flex;
     flex-direction: column;
     overflow: hidden;
     position: relative;
+    background: #fff;
   }
 
   #welcome .logo {
-    width: 50%;
+    width: 250px;
     margin: 0 auto;
   }
+#welcome .section-wrap{
+  margin-top: 10px;
+}
+    #welcome h2{
+      margin: 0;
+    }
 
-  #welcome .logoText p {
-    line-height: 0.8;
-    font-size: 1rem;
-    font-family: GanjNamehSans;
+  #welcome p {
+        margin-right: 10%;
+    margin-left: 10%;
+    font-size: 15px;
+    margin-bottom: 10px;
   }
   /******************************
 intro Section
@@ -561,15 +569,44 @@ Store Section
 *******************************/
 
   #sponsorship {
-    background: #FFA726;
+    background: #F9F3DD;
   }
-  /******************************
+  #sponsorship h2{
+    color: #799690;
+  }
+
+  #sponsorship p{
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-bottom: 50px;
+  }
+
+#sponsorship .payment{
+   width: 200px;
+   height: 80px;
+   background: #ff5c5c;
+   line-height: 85px;
+   font-family: lalezar;
+   font-size: 50px;
+   text-align: center;
+   text-decoration: none;
+   color: #fff;
+   box-shadow: 2px 2px 6px #777;
+   border-radius: 20px;
+   display: block;
+   margin: 0 auto;
+}
+
+#sponsorship .payment:hover{
+  color:#3e789e;
+}
+/******************************
 scrool
 *******************************/
+#store{
+  background-color: #f3f3f3;
+}
 
-  .arabic {
-    background-color: #fff;
-  }
   /******************************
 scrool
 *******************************/
@@ -636,7 +673,7 @@ propertis Section
 *******************************/
 
   #propertis {
-    background-color: #32383c;
+    background-color: #686868;
   }
 #propertis img{
   width: 850px;
