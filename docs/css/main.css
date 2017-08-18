@@ -569,7 +569,7 @@ Store Section
 *******************************/
 
   #sponsorship {
-    background: #F9F3DD;
+    background: #fff;
   }
   #sponsorship h2{
     color: #799690;
@@ -1071,4 +1071,9 @@ scrool
   button {
     -webkit-appearance: none;
     -moz-appearance: none;
+  }
+
+
+  #Identity{
+    
   }
