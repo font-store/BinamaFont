@@ -266,8 +266,11 @@ intro Section
     justify-content: center;
     background-color: #b51153;
     padding-bottom: 0px;
+    padding: 0px;
   }
-
+ #intro img{
+   height: 450px;
+ }
   #intro h1,
   #intro h2 {
     font-weight: 400;
