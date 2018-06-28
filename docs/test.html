@@ -1,0 +1,157 @@
+<html>
+
+<head>
+    <title>ArabicUIDisplay test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+    <link rel="stylesheet" href="apple.css" >
+
+    <style>
+        p {
+            margin-bottom: 10px;
+        }
+
+        body {
+            background-color: #eee;
+            color: #000;
+            font-size: 14px;
+            direction: rtl;
+            font-family: ArabicUIDisplay;
+        }
+
+        .sample {
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 5px;
+            margin: 20px auto;
+            max-width: 1000px;
+            padding: 50px;
+            background-color: #fff;
+            color: #333;
+            text-align: center;
+
+            overflow: hidden;
+        }
+
+        .sample p.first {
+            font-size: 14px;
+            line-height: 1.5;
+            overflow: hidden;
+            margin: 10px;
+            display: ;
+            block;
+        }
+
+        #testWeight {
+            border: 1px solid red;
+            background: #666;
+
+            position: relative;
+            display: ;
+            block;
+            font-size: 20px;
+            font-family: monospace;
+            direction: ltr;
+        }
+
+        #testWeight a {
+            display: inline-block;
+            padding: 10px;
+            background: red;
+            cursor: pointer;
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+
+    <section class="sample">
+        <div id="testWeight">
+
+
+
+            <a href="#" class="Thin">Thin</a>
+            <a href="#" class="Ultralight">Ultralight</a>
+            <a href="#" class="Light">Light</a>
+            <a href="#" class="Regular">Regular</a>
+            <a href="#" class="Medium">Medium</a>
+            <a href="#" class="Semibold">Semibold</a>
+            <a href="#" class="Bold">Bold</a>
+
+            <a href="#" class="Heavy">Heavy</a>
+            <a href="#" class="Black">Black</a>
+            <input type="number" id="num" value=50></input>
+            <a href="index2.html" class="">فونت جدید اپل</a>
+        </div>
+        <p class="first" contenteditable="true">
+            هنر و گرافیگ
+        </p>
+    </section>
+
+
+
+    <script type="text/javascript" src="jquery-2.2.3.min.js"></script>
+    <script type="text/javascript">
+        $('#num').on('input', function () {
+            var val = $(this).val() + "px";
+
+            $('.sample p').css('font-size', val);
+        });
+
+        $('#testWeight .Thin').on('click', function () {
+            $('.sample p').css('font-weight', 100);
+            return false;
+        });
+
+        $('#testWeight .Ultralight').on('click', function () {
+            $('.sample p').css('font-weight', 200);
+            return false;
+        });
+
+        $('#testWeight .Light').on('click', function () {
+            $('.sample p').css('font-weight', 300);
+            return false;
+        });
+
+        $('#testWeight .Regular').on('click', function () {
+            $('.sample p').css('font-weight', 400);
+            return false;
+        });
+
+        $('#testWeight .Medium').on('click', function () {
+            $('.sample p').css('font-weight', 500);
+            return false;
+        });
+
+        $('#testWeight .Semibold').on('click', function () {
+            $('.sample p').css('font-weight', 600);
+            return false;
+        });
+
+        $('#testWeight .Bold').on('click', function () {
+            $('.sample p').css('font-weight', 700);
+            return false;
+        });
+
+        $('#testWeight .Black').on('click', function () {
+            $('.sample p').css('font-weight', 800);
+            return false;
+        });
+
+        $('#testWeight .Heavy').on('click', function () {
+            $('.sample p').css('font-weight', 900);
+            return false;
+        });
+
+
+        $('#num').val(170).trigger('input');
+    </script>
+
+</body>
+
+</html>
