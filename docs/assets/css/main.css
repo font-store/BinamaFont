@@ -8,30 +8,290 @@
     overflow: hidden;
   }
 
+  a {
+    text-decoration: none
+  }
+
   html {
-    font-family: TestFont, sans-serif, Arial, Helvetica;
+    font-family: behdadweb, sans-serif, Arial, Helvetica;
     direction: rtl;
     margin: 0px;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.8;
   }
 
   body {
-    /*background-color: #f3f3f3;*/
-    background-color: #efefef;
-    color: #424242;
+    background-color: #E9EBEC;
+    color: #333;
     min-width: 640px;
   }
 
-        #main-container{
-          
-        }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
 
-  .center {
-    height: auto;
-    width: 980px;
-    margin: auto;
-    text-align: left;
+  .container {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  /* Header section */
+
+  header {
+    display: flex;
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  header .container {
+    padding: 20px;
+    /* background: #ffffff; */
+  }
+
+  header .ffslogo-image,
+  header .ffslogo-title,
+  header .navbar {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ffslogo-image img {
+    width: 35px;
+    position: relative;
+    display: block;
+  }
+
+  .ffslogo-title img {
+    width: 150px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 15px;
+    display: block;
+  }
+
+  header .navbox {
+    flex: 1 1 auto;
+    align-self: center;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .top-menu {
+    display: inline-flex;
+    flex-direction: row;
     padding: 0px;
-}
+    margin: 0px;
+    list-style: none;
+    margin: 0 20px;
+  }
+
+  .top-menu li {
+    display: iniblock;
+  }
+
+  .top-menu li a {
+    display: block;
+    color: #464646;
+    padding: 0 10px;
+  }
+
+  .top-menu li a:hover {
+    color: #F1326A;
+  }
+
+  /* footer */
+
+  footer {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    color: #bdbdbd;
+  }
+
+  footer .container {
+    flex-direction: column;
+  }
+
+  footer h3 {
+    font-family: LalezarWeb;
+    font-weight: 400;
+    margin: 0px;
+    margin-bottom: 16px;
+    color: #E9EBEC;
+  }
+
+  .top-footer {
+    border-radius: 10px 10px 0 0;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    background-color: #222222;
+    border-top: 1px solid #404040;
+    flex: 1 1 auto;
+  }
+
+  .top-footer .col {
+    flex: 1 1 0;
+    padding: 0 25px;
+  }
+
+  .top-footer .col .list-item {
+    margin: 0px;
+    padding: 0px;
+    padding-right: 23px;
+  }
+
+  .top-footer .col .list-item li {
+    margin: 5px 0;
+  }
+
+  .top-footer .about-font-store {
+    flex: 1.5;
+  }
+
+  .top-footer p,
+  .top-footer a {
+    font-family: BehdadWeb;
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: justify;
+    color: #bdbdbd;
+    display: block;
+    padding-bottom: 5px;
+  }
+
+  .about-font-store p {
+    margin-right: 10px;
+  }
+
+  .top-footer a:hover,
+  a:hover i {
+    color: #f0326b;
+  }
+
+  .top-footer .fontStore-social-icon {
+    margin-right: 10px;
+  }
+
+  .top-footer .fontStore-social-icon a {
+    color: #bdbdbd;
+    font-size: 18px;
+    margin: 0 5px;
+    display: inline-block;
+  }
+
+  .footer-bottom {
+    background-color: #1b1b1b;
+    border-top: 1px solid #2c2c2c;
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .footer-bottom a {
+    color: #f0326b;
+  }
+
+  .footer-bottom h5,
+  .footer-bottom h6 {
+    padding: 0px;
+    margin: 0px;
+    font-weight: 400;
+    line-height: 1.4;
+    font-family: GanjNamehSans;
+    font-size: 10px;
+    color: #888888;
+  }
+
+
+
+
+
+  /* intro-font */
+
+  .contents-module{
+    width: 960px;
+    margin: 40px auto;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contents-module-caption{
+    text-align: center;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    z-index: 99;
+  }
+
+  .contents-module-caption h2 {
+    
+    background: rgb(246, 96, 37);
+    text-shadow: 1px 1px 3px rgb(27, 27, 27);
+    color: #fff;
+    margin: 0px;
+    padding: 5px 35px;
+    border-radius: 50px;
+    line-height: 1.2;
+    font-family: LalezarWeb;
+    font-weight: 400;
+    font-size:26px;
+  }
+
+  .contents-module-wrapper {
+    overflow: hidden;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    background: #fff;
+    display: flex;
+    flex: 1 1 auto;
+    border-radius: 10px 10px;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 300px;
+  }
+
+  .video-cover{
+    position: relative;
+    overflow: hidden;
+    flex:1 0 auto;
+    display: flex;
+    height: 380px;
+  }
+  .video-cover-bg{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    background-color: #1b1b1b;
+  }
+  .video-cover-bg-overly{
+    z-index: 2;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 380px;
+    background-color: #1F2532;
+    
+opacity: 0.7;
+
+  }
+  .video-cover-overly{
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 380px;
+    
+  }
+
+
+  /* border-top: 1px solid rgba(0,0,0,.1); */
