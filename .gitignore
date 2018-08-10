@@ -1,1 +1,6 @@
 /docs/node_modules/
+/docs/donates/config.php
+/docs/donates/convertor.php
+/docs/donates/get-payping-report.php
+/docs/donates/lastDonate.json
+/docs/donates/binama-new.json
