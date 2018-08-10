@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $(" .owl-carousel").owlCarousel({
+    $(" .main-slider").owlCarousel({
         // autoPlay: true,
         // stopOnHover: true,
         // slideSpeed: 200,
@@ -18,7 +18,7 @@ $(document).ready(function () {
         items:1,
         autoplay: 1000,
         smartSpeed: 200,
-        //nav: false,
+        nav: false,
 
         animateIn: 'bounceInLeft',
         animateOut: 'bounceOutRight',
@@ -28,16 +28,18 @@ $(document).ready(function () {
         responsiveBaseElement: window
     });
 
-var worker = $('#workers');
+    $(" .useablity-slider").owlCarousel({
 
-var tabItem = $('.tab-menu li',worker);
-var tabs = $('.tab-wrapper .tab-item',worker);
-tabItem.on('click',function(){
-        $(tabItem).removeClass('active');
-        var clicked = $('a',this).data('item');
-        $(tabs).removeClass('active');
-        $(clicked).addClass('active');
-        $(this).addClass('active');
-});
+        rtl: true,
+
+        items:2,
+        nav: true,
+        navText: ['بعدی','قبلی'],
+        autoplay: false,
+        
+        
+
+        
+    });
 
 });

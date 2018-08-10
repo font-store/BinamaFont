@@ -6,8 +6,8 @@ module.exports = {
 	},
 	// But we still ask BrowserSync to watch changes in our local files
 	files: [
-		"css/*.css",
-		"js/*.js",
+		"assets/css/*.css",
+		"assets/js/*.js",
 		"*.html"
 	],
 	// Now when a file is changed, BrowserSync in the browser updates the
