@@ -357,7 +357,7 @@ a:hover i {
 }
 
 .content-text {
-  padding: 50px 0
+  padding: 70px 0
 }
 
 .content-text h4 {
@@ -380,9 +380,9 @@ a:hover i {
 }
 
 .content-text p {
-  padding: 0 120px;
+  
   margin: 0;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 2.1
 }
 
@@ -473,7 +473,7 @@ a:hover i {
 
 .main-slider {
   margin: 10px auto;
-  width: 95% !important;
+  width: 90% !important;
   padding: 0
 }
 

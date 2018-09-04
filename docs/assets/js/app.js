@@ -4,15 +4,20 @@ $(document).ready(function () {
         rtl: true,
         items: 1,
         autoplay: 1000,
-        smartSpeed: 200,
-        nav: false,
-        animateIn: 'bounceInLeft',
-        animateOut: 'bounceOutRight',
+        // smartSpeed: 200,
+        nav: true,
+        animateIn: 'slideInLeft',
+       animateOut: 'slideOutRight',
+        
         loop: true,
-        responsiveBaseElement: window
+        responsiveBaseElement: window,
+        navText: ['بعدی', 'قبلی'],
     });
 
     $(" .useablity-slider").owlCarousel({
+        animateIn: 'slideInLeft',
+        animateOut: 'slideOutRight',
+       
         rtl: true,
         items: 2,
         nav: true,
