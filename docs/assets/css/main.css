@@ -47,23 +47,27 @@ body {
 
 /* Header */
 header {
+  z-index: 200;
   display: flex;
   position: relative;
   margin-bottom: 0;
+  padding-top: 20px;
 }
 
 header .container {
-  padding: 15px 25px;
+  padding: 10px 25px;
   padding-bottom: 10px;
 }
 
 header .ffslogo-image,
 header .ffslogo-title,
-header .navbar {
+header .navbox {
   display: flex;
   position: relative;
-  overflow: hidden;
+
 }
+
+
 
 .is-hidden {
   display: none !important;
@@ -109,25 +113,101 @@ header .navbox {
   text-align: center;
 }
 
-.top-menu {
-  display: inline-flex;
-  flex-direction: row;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  margin: 0 20px;
-}
-
-.top-menu li a {
-  display: block;
+.top-menu a {
+  white-space: nowrap;
   color: #464646;
-  padding: 0 10px;
   font-size: 15px;
+  display: block;
+  line-height: 1.2em;
 }
 
-.top-menu li a:hover {
+.top-menu ul {
+  *zoom: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.top-menu ul:before,
+.top-menu ul:after {
+  content: "";
+  display: table;
+}
+
+.top-menu ul:after {
+  clear: both;
+}
+
+.top-menu ul>li {
+  float: right;
+  position: relative;
+}
+
+.top-menu a {
+  padding: 10px 15px;
+
+
+}
+
+.top-menu a i{
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.top-menu a:hover {
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.05);
   color: #f1326a;
 }
+
+.top-menu li ul {
+  background: #fff;
+  border-radius: 10px 10px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+
+
+}
+
+.top-menu li ul li {
+  display: block;
+  width: 100%;
+}
+
+.top-menu li ul a {
+  border: none;
+  text-align: right;
+  font-size: 14px;
+}
+
+
+.top-menu li ul {
+  position: absolute;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  top: 36px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+
+
+
+
+.top-menu li ul li {
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: height 200ms ease-in;
+  -moz-transition: height 200ms ease-in;
+  -o-transition: height 200ms ease-in;
+  transition: height 200ms ease-in;
+}
+
+.top-menu ul>li:hover ul li {
+  height: 36px;
+}
+
+
 
 /* Footer */
 footer {
@@ -270,11 +350,12 @@ a:hover i {
 
 .contents-module-wrapper {
   overflow: hidden;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+
   background: #fff;
   display: flex;
   flex: 1 1 auto;
   border-radius: 10px 10px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
   flex-direction: column;
   align-items: stretch;
   min-height: 300px
@@ -599,9 +680,10 @@ blockquote.importent {
   display: block;
 }
 
-#FontAbout .content-text{
+#FontAbout .content-text {
   padding-top: 50px;
 }
+
 .desinger-avator {
   width: 300px;
   margin: 0 auto;
