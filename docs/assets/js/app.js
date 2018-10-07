@@ -56,7 +56,9 @@ $(document).ready(function () {
     });
     
     
-    // , function () {
-    //     $(this).find("span:last").remove();
-    // });
+    $('.content-moreBTT').on('click', function(){
+        var p = $(this).closest('.content-text');
+        $(this).hide();
+        $('.content-more',p).removeClass('is-hidden').slideToggle("slow");
+    })
 });

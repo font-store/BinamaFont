@@ -9,8 +9,15 @@ svg:not(:root) {
 }
 
 a {
-  text-decoration: none
+  text-decoration: none;
+  color: #464646;
 }
+
+
+a:hover {
+  color: #f1326a;
+}
+
 
 html {
   font-family: behdadweb, sans-serif, Arial, Helvetica;
@@ -46,7 +53,7 @@ header {
 }
 
 header .container {
-  padding: 15px 30px;
+  padding: 15px 25px;
   padding-bottom: 10px;
 }
 
@@ -134,17 +141,11 @@ footer .container {
   flex-direction: column;
 }
 
-footer h3 {
-  font-family: LalezarWeb;
-  font-weight: 400;
-  margin: 0;
-  margin-bottom: 16px;
-  color: #e9ebec;
-}
+
 
 .top-footer {
   border-radius: 10px 10px 0 0;
-  padding: 20px 0;
+  padding: 15px 0;
   display: flex;
   flex-direction: row;
   background-color: #222;
@@ -163,8 +164,17 @@ footer h3 {
   padding-right: 23px
 }
 
+.top-footer h5 {
+  font-family: LalezarWeb;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 10px;
+  color: #e9ebec;
+  font-size: 16px;
+}
+
 .top-footer .col .list-item li {
-  margin: 5px 0
+  margin: 3px 0
 }
 
 .top-footer .about-font-store {
@@ -276,7 +286,13 @@ a:hover i {
   flex: 1 0 auto;
   display: flex;
   background-color: #1f2532;
-  height: 500px
+  height: 400px
+}
+
+.super-cover img {
+  margin: 0 auto;
+  width: 500px;
+}
 }
 
 .video-cover {
@@ -284,7 +300,7 @@ a:hover i {
   overflow: hidden;
   flex: 1 0 auto;
   display: flex;
-  height: 280px
+  height: 260px
 }
 
 .video-cover-bg {
@@ -327,6 +343,10 @@ a:hover i {
   background-color: #1b1b1b
 }
 
+.photo-cover-bg img {
+  width: 100%;
+}
+
 .photo-cover-bg-overly {
   z-index: 2;
   position: absolute;
@@ -360,31 +380,88 @@ a:hover i {
   padding: 70px 0
 }
 
-.content-text h4 {
+
+.content-more {
+  display: none;
+  position: relative;
+  overflow: hidden;
+}
+
+p+.content-btt-wraper {
+  margin-top: 40px;
+}
+
+.content-btt-wraper {
+  text-align: center;
+}
+
+.content-moreBTT {
+  display: inline-block;
+  margin: 0 auto;
+  background: #f66025;
+  cursor: pointer;
+  color: #fff;
+  text-shadow: 1px 1px 1px #282828;
+  padding: 10px 25px;
+  border-radius: 50px;
+  line-height: 1;
   font-family: LalezarWeb;
-  font-size: 25px;
-  margin-bottom: 0;
-  margin-top: 20px
+  font-weight: 400;
+  font-size: 21px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+
+}
+
+.content-moreBTT:hover {
+  color: #fff;
+  text-shadow: 1px 1px 3px #1b1b1b;
 }
 
 .content-text h4,
 .content-text p,
-.content-text ul {
-  width: 760px;
+.content-text ul,
+.content-text blockquote {
+  max-width: 780px;
   margin: 0 auto;
   display: block;
 }
 
+.content-text h4 {
+  font-family: LalezarWeb;
+  font-size: 25px;
+  margin-bottom: 0;
+  margin-top: 25px
+}
+
 .content-text ul {
-  padding-right: 155px;
+  padding-right: 55px;
   font-size: 16px;
-  line-height: 2
+  line-height: 1.95;
 }
 
 .content-text p {
- 
+
   font-size: 16px;
   line-height: 2.0;
+}
+
+.content-text blockquote {
+  background: #dedede;
+  font-size: 14px;
+  padding: 15px 20px;
+  display: block;
+  overflow: hidden;
+  border-radius: 4px;
+  margin: 16px auto;
+  max-width: 700px;
+}
+
+blockquote.importent {
+  font-family: LalezarWeb;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #b73317;
+  text-align: center;
 }
 
 .content-text .owl-carousel {
@@ -490,15 +567,15 @@ a:hover i {
 
 #FontDiff .alternative-demo {
   display: block;
-  margin: 10px auto;
-  margin-bottom: 20px;
+  margin: 29px auto;
+
   padding: 0
 }
 
 #FontDiff .varilabel-demo {
   width: 500px;
   display: flex;
-  margin: 0 auto;
+  margin: 10px auto;
   flex-direction: column
 }
 
@@ -516,26 +593,56 @@ a:hover i {
 
 
 /* FontAbout Section */
-#FontAbout .content-video{
+#FontAbout .content-video {
   margin: 50px auto;
-  width: 760px;
+  width: 780px;
   display: block;
 }
-.desinger-avator{
+
+#FontAbout .content-text{
+  padding-top: 50px;
+}
+.desinger-avator {
   width: 300px;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
-.desinger-avator .desinger-image{
+.desinger-avator .desinger-image {
   text-align: center;
   display: block;
 }
-.desinger-avator .desinger-image img{
+
+.desinger-avator .desinger-image img {
   border-radius: 100%;
   border: 1px solid #fff;
   box-shadow: 1px 1px 4px 0px #999;
 }
 
-.desinger-avator .desinger-caption{
+.desinger-avator .desinger-caption {
   display: block;
+  text-align: center;
+  font-family: LalezarWeb;
+  font-weight: 400;
+  font-size: 23px;
+
+}
+
+.mohammadelikaee-note {
+  max-width: 780px;
+  margin: 0 auto;
+  display: flex;
+
+}
+
+/* #mohammadelikaee */
+.mohammadelikaee-note img {
+  width: 150px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+
+#mohammadelikaee .photo-cover {
+  height: auto !important;
 }
