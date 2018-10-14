@@ -6,24 +6,70 @@ $(document).ready(function () {
         autoplay: 1000,
         // smartSpeed: 200,
         nav: true,
-        animateIn: 'slideInLeft',
-       animateOut: 'slideOutRight',
-        
+      //  animateIn: 'slideInLeft',
+       // animateOut: 'slideOutRight',
+
         loop: true,
         responsiveBaseElement: window,
         navText: ['بعدی', 'قبلی'],
     });
 
+
+
     $(" .useablity-slider").owlCarousel({
         animateIn: 'slideInLeft',
         animateOut: 'slideOutRight',
-       
+
         rtl: true,
         items: 2,
         nav: true,
         navText: ['بعدی', 'قبلی'],
         autoplay: false,
     });
+
+    
+        var slide = $(this);
+        var owl = $('.owl-carousel', this);
+        $('.textslider-prev', slide).hide();
+        owl.owlCarousel({
+            rtl: true,
+            items: 1,
+            responsiveBaseElement: window,
+            autoplay: false,
+            nav: false,
+            margin:10,
+        });
+        owl.on('translated.owl.carousel', function(event) {
+            var item = event.item.index;
+            var pages = event.item.count - 1;
+            var page = event.item.index;
+            if (page === 0) {
+                $('.textslider-prev', slide).hide();
+            } else {
+                $('.textslider-prev', slide).show();
+            }
+
+            if (page === pages) {
+                $('.textslider-next', slide).hide();
+            } else {
+                $('.textslider-next', slide).show();
+            }
+
+            
+        });
+        $('.textslider-prev', slide).on('click', function (e) {
+            owl.trigger('prev.owl.carousel');
+            e.stopPropagation(); 
+
+        });
+        $('.textslider-next', slide).on('click',function (e) {
+            e.stopPropagation(); 
+            owl.trigger('next.owl.carousel');
+            
+        });
+
+        
+    
 
 
     function getDonations() {
@@ -48,17 +94,17 @@ $(document).ready(function () {
 
     var heart = $('<i class="userIsLove fa fa-heart" aria-hidden="true"></i>');
 
-    $("#donated").on('mouseenter','.user-donated', function () {
+    $("#donated").on('mouseenter', '.user-donated', function () {
         $(this).append(heart);
     });
-    $("#donated").on('mouseleave','.user-donated', function () {
+    $("#donated").on('mouseleave', '.user-donated', function () {
         $(this).find(".userIsLove").remove();
     });
-    
-    
-    $('.content-moreBTT').on('click', function(){
+
+
+    $('.content-moreBTT').on('click', function () {
         var p = $(this).closest('.content-text');
         $(this).hide();
-        $('.content-more',p).removeClass('is-hidden').slideToggle("slow");
+        $('.content-more', p).removeClass('is-hidden').slideToggle("slow");
     })
 });

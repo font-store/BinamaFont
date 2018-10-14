@@ -150,7 +150,7 @@ header .navbox {
 
 }
 
-.top-menu a i{
+.top-menu a i {
   font-size: 14px;
   margin-right: 5px;
 }
@@ -163,7 +163,7 @@ header .navbox {
 
 .top-menu li ul {
   background: #fff;
-  border-radius: 10px 10px;
+  border-radius: 8px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
 
 
@@ -224,7 +224,7 @@ footer .container {
 
 
 .top-footer {
-  border-radius: 10px 10px 0 0;
+  border-radius: 8px 8px 0 0;
   padding: 15px 0;
   display: flex;
   flex-direction: row;
@@ -289,7 +289,7 @@ a:hover i {
 
 .top-footer .fontStore-social-icon a {
   color: #bdbdbd;
-  font-size: 18px;
+  font-size: 20px;
   margin: 0 5px;
   display: inline-block
 }
@@ -354,7 +354,7 @@ a:hover i {
   background: #fff;
   display: flex;
   flex: 1 1 auto;
-  border-radius: 10px 10px;
+  border-radius: 8px 8px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
   flex-direction: column;
   align-items: stretch;
@@ -498,16 +498,21 @@ p+.content-btt-wraper {
   text-shadow: 1px 1px 3px #1b1b1b;
 }
 
-.content-text h4,
-.content-text p,
-.content-text ul,
-.content-text blockquote {
+.content-text>h4,
+.content-text>p,
+.content-text>ul,
+.content-text>blockquote,
+.content-more>h4,
+.content-more>p,
+.content-more>ul,
+.content-more>blockquote {
   max-width: 780px;
   margin: 0 auto;
   display: block;
 }
 
-.content-text h4 {
+.content-text>h4,
+.content-more>h4 {
   font-family: LalezarWeb;
   font-size: 25px;
   margin-bottom: 0;
@@ -522,7 +527,7 @@ p+.content-btt-wraper {
 
 .content-text p {
 
-  font-size: 16px;
+  font-size: 16.0px;
   line-height: 2.0;
 }
 
@@ -559,7 +564,7 @@ blockquote.importent {
   display: block;
   overflow: hidden;
   border: 1px solid #999;
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 1px 1px 4px 1px #bab7b7
 }
 
@@ -590,6 +595,87 @@ blockquote.importent {
   height: auto !important;
   width: 100%
 }
+
+
+.main-slider {
+  margin: 10px auto;
+  width: 90% !important;
+  padding: 0
+}
+
+/* text slider */
+.text-slider {
+
+  width: 830px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+
+}
+
+.text-slider .textslider-nav {
+
+  width: 50px;
+  display: block;
+  align-self: center;
+}
+
+.text-slider .textslider-container {
+
+  margin: 0 10px;
+  width: 730px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.text-slider .textslider-next,
+.text-slider .textslider-prev {
+  width: 30px;
+  overflow: hidden;
+
+  border-radius: 100%;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  text-align: center;
+}
+
+.text-slider .textslider-next i,
+.text-slider .textslider-prev i {
+
+  color: rgb(255, 118, 3);
+  font-size: 30px;
+}
+
+.text-slider .owl-stage {
+  display: flex;
+  height: 100%;
+
+}
+
+.text-slider .owl-item {
+  flex: 1;
+  align-self: center;
+}
+
+.neveshtar h4 {
+  text-align: center;
+  font-family: LalezarWeb;
+  font-size: 25px;
+  margin: 0;
+}
+
+.neveshtar .item {
+  font-size: 15px;
+
+  position: relative;
+  overflow: hidden;
+  padding: 0px 10px;
+}
+
 
 #donated {
   margin: 0 50px;
@@ -630,11 +716,7 @@ blockquote.importent {
   text-shadow: 1px 1px 2px #000
 }
 
-.main-slider {
-  margin: 10px auto;
-  width: 90% !important;
-  padding: 0
-}
+
 
 #FontDiff .main-slider p {
   font-family: LalezarWeb;
@@ -721,7 +803,7 @@ blockquote.importent {
 .mohammadelikaee-note img {
   width: 150px;
   border: 1px solid #eee;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 
