@@ -5,9 +5,9 @@ $(document).ready(function () {
         items: 1,
         autoplay: 1000,
         // smartSpeed: 200,
-        nav: true,
-      //  animateIn: 'slideInLeft',
-       // animateOut: 'slideOutRight',
+        nav: false,
+        //  animateIn: 'slideInLeft',
+        // animateOut: 'slideOutRight',
 
         loop: true,
         responsiveBaseElement: window,
@@ -27,50 +27,49 @@ $(document).ready(function () {
         autoplay: false,
     });
 
-    
-        var slide = $(this);
-        var owl = $('.owl-carousel', this);
-        $('.textslider-prev', slide).hide();
-        owl.owlCarousel({
-            rtl: true,
-            items: 1,
-            responsiveBaseElement: window,
-            autoplay: false,
-            nav: false,
-            margin:10,
-        });
-        owl.on('translated.owl.carousel', function(event) {
-            var item = event.item.index;
-            var pages = event.item.count - 1;
-            var page = event.item.index;
-            if (page === 0) {
-                $('.textslider-prev', slide).hide();
-            } else {
-                $('.textslider-prev', slide).show();
-            }
 
-            if (page === pages) {
-                $('.textslider-next', slide).hide();
-            } else {
-                $('.textslider-next', slide).show();
-            }
+    var slide = $(this);
+    var owl = $('.owl-carousel', this);
+    $('.textslider-prev', slide).hide();
+    owl.owlCarousel({
+        rtl: true,
+        items: 1,
+        responsiveBaseElement: window,
+        autoplay: false,
+        nav: false,
+        margin: 10,
+    });
+    owl.on('translated.owl.carousel', function (event) {
+        var item = event.item.index;
+        var pages = event.item.count - 1;
+        var page = event.item.index;
+        if (page === 0) {
+            $('.textslider-prev', slide).hide();
+        } else {
+            $('.textslider-prev', slide).show();
+        }
 
-            
-        });
-        $('.textslider-prev', slide).on('click', function (e) {
-            owl.trigger('prev.owl.carousel');
-            e.stopPropagation(); 
+        if (page === pages) {
+            $('.textslider-next', slide).hide();
+        } else {
+            $('.textslider-next', slide).show();
+        }
 
-        });
-        $('.textslider-next', slide).on('click',function (e) {
-            e.stopPropagation(); 
-            owl.trigger('next.owl.carousel');
-            
-        });
 
-        
-    
+    });
+    $('.textslider-prev', slide).on('click', function (e) {
+        owl.trigger('prev.owl.carousel');
+        e.stopPropagation();
 
+    });
+    $('.textslider-next', slide).on('click', function (e) {
+        e.stopPropagation();
+        owl.trigger('next.owl.carousel');
+
+    });
+
+
+   
 
     function getDonations() {
         $.getJSON("donates/binama.json", function (data) {

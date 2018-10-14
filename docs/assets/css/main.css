@@ -468,6 +468,7 @@ a:hover i {
   overflow: hidden;
 }
 
+
 p+.content-btt-wraper {
   margin-top: 40px;
 }
@@ -550,12 +551,16 @@ blockquote.importent {
   text-align: center;
 }
 
-.content-text .owl-carousel {
-  padding: 50px 0
-}
-
 .content-text p+p {
   margin-top: 16px
+}
+
+.owl-dots{
+  font-size: 0;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+  background: #bbb ;
 }
 
 .useablity-slider-item {
@@ -596,11 +601,17 @@ blockquote.importent {
   width: 100%
 }
 
+.content-sample-wrapper{
+  margin: 50px auto;
+  background: #eee;
+  padding: 55px 0 40px 0;
+}
+
 
 .main-slider {
-  margin: 10px auto;
-  width: 90% !important;
-  padding: 0
+  margin: 0px auto;
+  width: 850px !important;
+  padding: 0px;
 }
 
 /* text slider */
