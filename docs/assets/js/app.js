@@ -22,7 +22,7 @@ $(document).ready(function () {
 
         rtl: true,
         items: 2,
-        nav: true,
+        nav: false,
         navText: ['بعدی', 'قبلی'],
         autoplay: false,
     });

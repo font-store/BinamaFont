@@ -1,0 +1,161 @@
+
+/*********************
+  Donated Section
+*********************/
+#donated {
+  margin: 0 50px;
+  display: flex;
+  flex-wrap: wrap
+}
+
+#donated .user-donated {
+  padding: 10px 10px;
+  flex: 1 1 90px;
+  text-align: center;
+  display: block;
+  position: relative
+}
+
+#donated .user-donated img {
+  display: block;
+  border-radius: 100%;
+  margin: 0 auto;
+  border: 2px solid #555
+}
+
+#donated .user-donated .name {
+  color: #1b1b1b;
+  padding: 5px 0;
+  line-height: 1
+}
+
+#donated a.user-donated:hover {
+  background-color: #eee
+}
+
+#donated .user-donated .userIsLove {
+  position: absolute;
+  top: 0;
+  font-size: 20px;
+  color: #f1326a;
+  text-shadow: 1px 1px 2px #000
+}
+
+/*********************
+  FontDiff Section
+*********************/
+
+#FontDiff .main-slider p {
+  font-family: LalezarWeb;
+  font-weight: 400;
+  font-size: 26px;
+  margin: 0;
+  text-align: center;
+  line-height: 1.3;
+  color: #b73317
+}
+
+#FontDiff .alternative-demo {
+  display: block;
+  margin: 29px auto;
+
+  padding: 0
+}
+
+#FontDiff .varilabel-demo {
+  width: 500px;
+  display: flex;
+  margin: 10px auto;
+  flex-direction: column
+}
+
+#FontDiff .varilabel-demo>div {
+  flex: 1
+}
+
+#FontDiff .varilabel-demo img {
+  margin: 10px auto;
+  border: 1px solid #bbb;
+  box-shadow: 1px 1px 4px 0 #aaa;
+  width: 500px;
+  border-radius: 4px
+}
+
+
+/*********************
+  FontAbout Section
+*********************/
+
+/* FontAbout Section */
+#FontAbout .content-video {
+  margin: 50px auto;
+  width: 780px;
+  display: block;
+}
+
+#FontAbout .content-text {
+  padding-top: 50px;
+}
+
+.desinger-avator {
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.desinger-avator .desinger-image {
+  text-align: center;
+  display: block;
+}
+
+.desinger-avator .desinger-image img {
+  border-radius: 100%;
+  border: 1px solid #fff;
+  box-shadow: 1px 1px 4px 0px #999;
+}
+
+.desinger-avator .desinger-caption {
+  display: block;
+  text-align: center;
+  font-family: LalezarWeb;
+  font-weight: 400;
+  font-size: 23px;
+
+}
+
+/*********************
+  mohammadelikaee Section
+*********************/
+
+
+
+.mohammadelikaee-note {
+  max-width: 780px;
+  margin: 0 auto;
+  display: flex;
+
+}
+
+/* #mohammadelikaee */
+.mohammadelikaee-note img {
+  width: 150px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+
+#mohammadelikaee .photo-cover {
+  height: auto !important;
+}
+
+/*********************
+  Donated Section
+*********************/
+#Investment .content-text{
+  padding: 0;
+  font-size: 0;
+}
+
+/*********************
+  Donated Section
+*********************/
