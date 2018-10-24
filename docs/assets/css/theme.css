@@ -532,10 +532,15 @@ p+.content-btt-wraper {
   line-height: 2.0;
 }
 
+
+.content-text p+p {
+  margin-top: 16px
+}
+
 .content-text blockquote {
   background: #dedede;
-  font-size: 14px;
-  padding: 15px 20px;
+
+  padding: 1px 20px;
   display: block;
   overflow: hidden;
   border-radius: 4px;
@@ -543,24 +548,24 @@ p+.content-btt-wraper {
   max-width: 700px;
 }
 
+.content-text blockquote p {
+  font-size: 14px;
+}
+
 blockquote.importent {
-  font-family: LalezarWeb;
-  font-size: 20px;
+  /* font-family: LalezarWeb; */
+
   line-height: 1.5;
   color: #b73317;
-  text-align: center;
+
 }
 
-.content-text p+p {
-  margin-top: 16px
-}
-
-.owl-dots{
+.owl-dots {
   font-size: 0;
 }
 
-.owl-theme .owl-dots .owl-dot span{
-  background: #bbb ;
+.owl-theme .owl-dots .owl-dot span {
+  background: #bbb;
 }
 
 .useablity-slider-item {
@@ -601,7 +606,7 @@ blockquote.importent {
   width: 100%
 }
 
-.content-sample-wrapper{
+.content-sample-wrapper {
   margin: 50px auto;
   background: #f3f3f3;
   padding: 55px 0 40px 0;
@@ -686,7 +691,3 @@ blockquote.importent {
   overflow: hidden;
   padding: 0px 10px;
 }
-
-
-
-
