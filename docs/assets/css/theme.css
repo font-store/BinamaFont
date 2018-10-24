@@ -517,13 +517,19 @@ p+.content-btt-wraper {
   font-family: LalezarWeb;
   font-size: 25px;
   margin-bottom: 0;
-  margin-top: 25px
-}
 
+}
+.content-text> ul+h4,
+.content-more> ul+h4,
+.content-text> p+h4,
+.content-more> p+h4{
+  margin-top: 35px
+}
 .content-text ul {
   padding-right: 55px;
   font-size: 16px;
   line-height: 1.95;
+  margin: 10PX auto;
 }
 
 .content-text p {
